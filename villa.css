@@ -1,0 +1,341 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+
+
+
+
+
+/* -----------------------------------------------------------------search box 3*/
+.box1{
+    height: 100px;
+    background-color: rgb(46, 234, 21);
+    padding: 5px;
+}
+
+.box1 h4{
+    text-align: start;
+    /* height: 50px; */
+    padding: 7px;
+
+    width: 230px;
+    /* background-color: lightBlue; */
+}
+
+.inputs{
+    min-height: 50px;
+    background-color:transparent;
+
+    /* padding: 15px; */
+    flex-wrap: wrap;
+    
+}
+
+option{
+    background-color: transparent;
+}
+
+
+.select{
+    /* width: 20%; */
+    width: 150px;
+    padding: 5px;
+    /* margin: 0px 0px 6px 6px; */
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    transition: all 1s;
+}
+.select:hover{
+    background-color: rgb(12, 60, 192);
+}
+
+
+
+
+
+.showcase{
+
+
+    min-height: 400px;
+    /* width: 400px; */
+    background-color: whitesmoke;
+    background-image: url("https://img.freepik.com/premium-photo/picture-house-with-chimney-top-it_1059430-113645.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+ 
+    display: grid;
+   grid-template-columns: auto auto auto ;
+   justify-content: center;
+   gap: 30px;
+   padding: 40px;
+   position: relative;
+   border: 5px double grey;
+  
+}
+.showcase1{
+    height: 360px;
+    min-width: 290px;
+    background-color:rgba(215, 215, 238, 0.4);
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    transition: all 2s;
+
+
+    /* --------------------------------------------------------border outline */
+
+  /* border: 30px solid;
+
+  outline: 8px solid snow;
+  outline-offset: -18px;
+
+  border-image: linear-gradient(45deg,
+  seagreen 0%,darkcyan 11%,darkgoldenrod 22%,red 33%,gold 44%,rgb(140, 219, 79) 55% );
+
+  border-image-slice: 1;
+
+border-image:repeating-linear-gradient(45deg
+,lightblue,seagreen 16px,fuchsia 16px,darkcyan 16px
+
+)40; */
+
+
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   }
+
+.showcase1 img{
+    height: 250px;
+    width: 100%;
+    border-radius: 7px;
+    transition: all 2s;
+  
+}
+
+.showcase1 button{
+    border: none;
+    background-color: lightblue;
+    border-radius: 5px;
+    padding: 5px;
+    width: 80px;
+}
+
+.showcase1 h5{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 30px;
+    /* color: yellow; */
+}
+
+.incoming{
+    height: 30%;
+    width:93%;
+    background-color: rgb(164, 165, 168);
+    position: absolute;
+    top: 100%;
+    transition: all 2s;
+    text-align: center;
+    padding: 3px;
+    
+}
+
+.showcase1:hover .incoming{
+    top: 75%;
+    transform: scalex(1.1);
+    
+}
+.showcase1:hover img{
+    transform: scalex(-0.9);
+    filter: grayscale(80%);
+    
+}
+.showcase1:hover{
+    transform: scalex(1.1);
+}
+.showcase1:hover::before{
+    /* transform: scalex(-1.1); */
+}
+.pos:hover{
+    /* transform: scalex(-1.1); */
+
+}
+
+.showcase1::before{
+    content: 'For Sale';
+    position: absolute;
+    height: 40px;
+    width: 80px;
+    background-color: rgb(205, 144, 144);
+    color: whitesmoke;
+    border-radius: 5px;
+    padding: 8px;
+    /* transform: scaleX(-1); */
+    /* display: none; */
+    z-index: 999;
+   
+}
+.pos{
+    position: absolute;
+    top: 3%;
+    left: 79%;
+    width: 80px;
+    padding: 0px;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    
+    background-color: red;
+   }
+
+
+.topic{
+    min-height: 150px;
+    background-color: silver;
+    text-align: center;
+    padding-top: 5px;
+
+}
+
+.topic button{
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10px;
+    width: 100px;
+}
+
+.topic h5,h2{
+    margin-bottom: 15px;
+   
+}
+.topic h5{
+    color: dodgerblue;
+}
+.box2 h2{
+    /* word-spacing: 10px; */
+    letter-spacing: 7px;
+}
+
+
+  
+  @media only screen and (min-width:300px) and (max-width:650px){
+    
+
+    .overall{
+        width: 100%;
+    }
+     
+    .navbar{
+        width: 100%;
+     
+    }
+    .nav{
+        /* width: 100%; */
+    }
+
+    .box{
+        /* justify-content: unset; */
+        
+        
+    }
+    .box1{
+        min-height: 500px;
+    }
+
+    .content{
+        width: 100%;
+        display: unset;
+    }
+    .content p{
+        display: none;
+    }
+
+    .inputs{
+       padding: 10px;
+    }
+    .select{
+        width: 100%;
+        margin: 0px 0px 5px 0px;
+        /* width: 260px; */
+    }
+
+    .showcase{
+        grid-template-columns: auto;
+
+        /* width: 100%; */
+    }
+
+    .showcase1{
+        /* width: 90%; */
+    }
+
+    .topic button{
+        margin-bottom: 10px;
+    }
+
+    .about{
+        /* flex-direction: column; */
+    }
+    .about1{
+
+        flex-direction: column;
+
+    }
+    .contactus{
+        width: 100%;
+    }
+    .pos{
+        left: 67%;
+        
+    }
+  
+ 
+  
+}
+
+@media only screen and (min-width:650px) and (max-width:1300px){
+
+    .overall{
+        width: 100%;
+    }
+     
+    .navbar{
+        width: 100%;
+     
+    }
+    .nav{
+        /* width: 100%; */
+    }
+
+    .content{
+      
+        width: 100%;
+    }
+    .box1{
+        min-height: 280px;
+    }
+    .inputs{
+        padding: 10px;
+     }
+     .select{
+         /* width: 100%; */
+         margin: 0px 0px 5px 0px;
+         width: 260px;
+     }
+     .showcase{
+        grid-template-columns: auto auto;
+
+        /* width: 100%; */
+    }
+    .pos{
+        left: 67%;
+        
+    }
+
+
+}
